@@ -1,13 +1,23 @@
+a{
+    margin: 0;
+    padding: 0;
+    box-sizing:
+    border-box ;
+    text-decoration: none;
+}
 .panda-bg-info{
-    background-color:#fceae8;
+    background-color:#ffffff;
 }
 .categories img{
     width: 100px;
 }
 .panda-btn{
-    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
-    color: white;
+    background-image: linear-gradient(to bottom, #80c4ee 0%, #1C84C3 100%);
+    color: rgb(255, 255, 255);
     border-radius: 8px;
     padding: 9px 25px;
     border: none;
+}
+.bglight{
+    background: #e0e0e0;
 }

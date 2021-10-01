@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iStore</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img style="height: 30px;" src="../../images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">iStore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../component/mac/mac.html">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../component/ipad/ipad.html">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../component/iphone/iphone.html">iPhone</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="flex justify-center mt-20 w-full">
+                <div class="w-6/12 img1">
+                    <img src="../../images/iphone/shop_3.png" alt="...">
+                </div>
+                <div class="w-4/12 mx-20 ">
+                    <h1 class="text-4xl">
+                        iPhone 12</h1>
+                    <p class="my-5 text-justify">A superpowerful chip. 5G speed. An advanced dual-camera system. A
+                        Ceramic Shield front that's tougher than any smartphone glass. And a bright, beautiful OLED
+                        display. iPhone 12 has it all — in two great sizes.
+                    </p>
+
+                    <!-- Memory//Storage//Delivery_option -->
+                    <span class="font-semibold mt-5">Model</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="ram8-input">
+                            iPhone 12
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="ram16-input">
+                            iPhone 12 mini
+                        </button>
+                    </div>
+
+                    <!-- Storage  -->
+                    <span class="font-semibold mt-5 mb-2">Storage</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="storage256-input">
+                            128GB SSD
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="storage512-input">
+                            256GB SSD
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="storage1tb-input">
+                            512GB SSD
+                        </button>
+
+                    </div>
+
+                    <!-- Delivery_op -->
+                    <span class="font-semibold mt-5">Choose your delivery option</span>
+                    <div>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded mb-5"
+                            id="delivery-prime-input">
+                            7 Day
+                        </button>
+                        <button
+                            class="bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border border-gray-500 rounded"
+                            id="delivery_free-input">
+                            Fast 2 Day $20
+                        </button>
+                    </div>
+
+                    <!-- Total Price  -->
+                    <div class="grid grid-cols-1 divide-y divide-black-500 w-6/12 mt-5 font-semibold">
+                        <!-- price  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Best Price</p>
+                            <p class="w-3/12"> $ <span id="best-price">599</span></p>
+                        </div>
+                        <!-- memory  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Extra Cost</p>
+                            <p class="w-3/12"> $ <span id="ram-cost">0</span></p>
+                        </div>
+                        <!-- storage  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Extra Storage Cost</p>
+                            <p class="w-3/12"> $ <span id="storage-cost">0</span></p>
+                        </div>
+                        <!-- delivery  -->
+                        <div class="flex justify-between mb-1">
+                            <p class="w-9/12">Delivery charge</p>
+                            <p class="w-3/12"> $ <span id="delivery-cost">0</span></p>
+                        </div>
+                        <!-- total  -->
+                        <div class="flex justify-between mb-5">
+                            <p class="w-9/12">Total Price</p>
+                            <p class="w-3/12"> $ <span id="sub-total">599</span></p>
+                        </div>
+
+                    </div>
+
+                    <!-- coupon code -->
+                    <div>
+                        <span class="font-semibold mt-10 mb-5">Add Promo 'stevekaku'</span>
+                        <div>
+                            <input type="text" class="px-4 py-2 leading-tight border border-gray-500 rounded mb-5"
+                                id="promo-code">
+                            <button
+                                class="bg-red-500 hover:bg-transparent text-white hover:text-black py-2 px-4 border border-red-500 rounded mb-5"
+                                id="promo-button">
+                                Apply
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- TOTAL PRICE  -->
+            <div class="divide-y divide-black-500 text-5xl text-center">
+                <div></div>
+                <div class="flex justify-center p-4">
+                    <p class="">Total</p>
+                    <p class=""> $ <span id="total">0</span></p>
+                </div>
+                <button
+                    class="bg-red-500 hover:bg-transparent text-white hover:text-black py-2 px-4 border border-red-500 rounded mb-5">
+                    Confirm
+                </button>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="script (1).js"></script>
+
+</body>
+
+</html>
